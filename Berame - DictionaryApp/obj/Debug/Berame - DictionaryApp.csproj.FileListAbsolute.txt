@@ -1,0 +1,14 @@
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.exe.config
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.exe
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.pdb
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.AssemblyReference.cache
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame___DictionaryApp.Form1.resources
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame___DictionaryApp.Properties.Resources.resources
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.GenerateResource.cache
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.CoreCompileInputs.cache
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame -.96985BFC.Up2Date
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.exe
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.pdb
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.xml
