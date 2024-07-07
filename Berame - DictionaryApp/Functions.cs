@@ -68,7 +68,6 @@ namespace Berame___DictionaryApp
         {
             panel.Controls.Clear();
             bool foundSynonyms = false;
-            var processedPartsOfSpeech = new HashSet<string>();
 
             if (definitions != null && definitions.Count > 0)
             {
@@ -76,8 +75,6 @@ namespace Berame___DictionaryApp
                 {
                     foreach (var meaning in definition.meanings)
                     {
-                        if (processedPartsOfSpeech.Contains(meaning.partOfSpeech)) continue;
-
                         var synonyms = new HashSet<string>();
 
                         if (meaning.definitions != null && meaning.definitions.Count > 0)
@@ -101,7 +98,6 @@ namespace Berame___DictionaryApp
                             AddLabelToPanel(panel, $"Synonyms for {definition.word} ({meaning.partOfSpeech}):", new Font("Arial", 15, FontStyle.Bold), Color.Purple);
                             AddLabelToPanel(panel, string.Join(", ", synonyms), new Font("Arial", 13, FontStyle.Regular), Color.Purple);
                             foundSynonyms = true;
-                            processedPartsOfSpeech.Add(meaning.partOfSpeech);
                         }
                     }
                 }
@@ -119,7 +115,6 @@ namespace Berame___DictionaryApp
         {
             panel.Controls.Clear();
             bool foundAntonyms = false;
-            var processedPartsOfSpeech = new HashSet<string>();
 
             if (definitions != null && definitions.Count > 0)
             {
@@ -127,8 +122,6 @@ namespace Berame___DictionaryApp
                 {
                     foreach (var meaning in definition.meanings)
                     {
-                        if (processedPartsOfSpeech.Contains(meaning.partOfSpeech)) continue;
-
                         var antonyms = new HashSet<string>();
 
                         if (meaning.definitions != null && meaning.definitions.Count > 0)
@@ -141,6 +134,7 @@ namespace Berame___DictionaryApp
                                 }
                             }
                         }
+
                         if (meaning.antonyms != null && meaning.antonyms.Count > 0)
                         {
                             antonyms.UnionWith(meaning.antonyms);
@@ -151,7 +145,6 @@ namespace Berame___DictionaryApp
                             AddLabelToPanel(panel, $"Antonyms for {definition.word} ({meaning.partOfSpeech}):", new Font("Arial", 15, FontStyle.Bold), Color.Purple);
                             AddLabelToPanel(panel, string.Join(", ", antonyms), new Font("Arial", 13, FontStyle.Regular), Color.Purple);
                             foundAntonyms = true;
-                            processedPartsOfSpeech.Add(meaning.partOfSpeech);
                         }
                     }
                 }
@@ -160,6 +153,42 @@ namespace Berame___DictionaryApp
             if (!foundAntonyms)
             {
                 AddDefinitionToPanel(panel, "API Response", "Doesn't contain antonyms for this word.", new Font("Arial", 13, FontStyle.Regular), Color.Red);
+            }
+
+            panel.VerticalScroll.Value = 0;
+        }
+
+        public static void DisplayUsageExamples(FlowLayoutPanel panel, List<DictionaryResponse> definitions)
+        {
+            panel.Controls.Clear();
+            bool foundExamples = false;
+
+            if (definitions != null && definitions.Count > 0)
+            {
+                foreach (var definition in definitions)
+                {
+                    foreach (var meaning in definition.meanings)
+                    {
+                        if (meaning.definitions.Any(def => !string.IsNullOrEmpty(def.example)))
+                        {
+                            AddLabelToPanel(panel, $"Part of Speech: {meaning.partOfSpeech}", new Font("Arial", 15, FontStyle.Underline), Color.DarkGreen);
+                        }
+
+                        foreach (var def in meaning.definitions)
+                        {
+                            if (!string.IsNullOrEmpty(def.example))
+                            {
+                                AddFormattedLabel(panel, "Example: ", def.example, new Font("Arial", 12, FontStyle.Bold), new Font("Arial", 12, FontStyle.Italic), Color.DarkBlue);
+                                foundExamples = true;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (!foundExamples)
+            {
+                AddDefinitionToPanel(panel, "API Response", "Doesn't contain usage examples for this word.", new Font("Arial", 13, FontStyle.Regular), Color.Red);
             }
 
             panel.VerticalScroll.Value = 0;

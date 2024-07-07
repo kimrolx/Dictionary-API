@@ -12,3 +12,16 @@ C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryA
 C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.pdb
 C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Kim Berame\Documents\Dev\C#\Berame - DictionaryApp\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.exe.config
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.exe
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\bin\Debug\Berame - DictionaryApp.pdb
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.AssemblyReference.cache
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame___DictionaryApp.Form1.resources
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame___DictionaryApp.Properties.Resources.resources
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.GenerateResource.cache
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.csproj.CoreCompileInputs.cache
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame -.96985BFC.Up2Date
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.exe
+C:\Users\kimrol\Documents\Dev\C#\Berame - Dictionary App\Berame - DictionaryApp\obj\Debug\Berame - DictionaryApp.pdb

@@ -83,8 +83,15 @@ namespace Berame___DictionaryApp
             string word = searchDictionaryTextBox.Text;
             if (!string.IsNullOrEmpty(word))
             {
-                var definitions = await _searchService.GetWordDefinitionAsync(word);
-                Functions.DisplaySynonyms(meaningsFlowLayoutPanel, definitions);
+                try
+                {
+                    var definitions = await _searchService.GetWordDefinitionAsync(word);
+                    Functions.DisplaySynonyms(meaningsFlowLayoutPanel, definitions);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while searching: {ex.Message}");
+                }
             }
             else
             {
@@ -97,8 +104,15 @@ namespace Berame___DictionaryApp
             string word = searchDictionaryTextBox.Text;
             if (!string.IsNullOrEmpty(word))
             {
-                var definitions = await _searchService.GetWordDefinitionAsync(word);
-                Functions.DisplayAntonyms(meaningsFlowLayoutPanel, definitions);
+                try
+                {
+                    var definitions = await _searchService.GetWordDefinitionAsync(word);
+                    Functions.DisplayAntonyms(meaningsFlowLayoutPanel, definitions);
+                } 
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while searching: {ex.Message}");
+                }
             }
             else
             {
@@ -108,11 +122,23 @@ namespace Berame___DictionaryApp
 
         private async void definitionBtn_Click(object sender, EventArgs e)
         {
+            await PerformSearch();
+        }
+
+        private async void usageBtn_Click(object sender, EventArgs e)
+        {
             string word = searchDictionaryTextBox.Text;
             if (!string.IsNullOrEmpty(word))
             {
-                var definitions = await _searchService.GetWordDefinitionAsync(word);
-                Functions.DisplayDefinitions(meaningsFlowLayoutPanel, definitions);
+                try
+                {
+                    var definitions = await _searchService.GetWordDefinitionAsync(word);
+                    Functions.DisplayUsageExamples(meaningsFlowLayoutPanel, definitions);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while searching: {ex.Message}");
+                }
             }
             else
             {

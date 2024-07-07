@@ -39,13 +39,13 @@
             this.searchDictionaryTextBox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.meaningsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.usageBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.definitionBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.antonymBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.synonymBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelHeader = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panelHeader2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.usageBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.actionbarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchWordBtn)).BeginInit();
@@ -105,7 +105,7 @@
             this.headerLabel.Location = new System.Drawing.Point(536, 56);
             this.headerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(474, 50);
+            this.headerLabel.Size = new System.Drawing.Size(606, 62);
             this.headerLabel.TabIndex = 2;
             this.headerLabel.Text = "WHAT\'S ON YOUR MIND?";
             // 
@@ -115,7 +115,7 @@
             this.searchWordBtn.BackColor = System.Drawing.Color.Transparent;
             this.searchWordBtn.Image = ((System.Drawing.Image)(resources.GetObject("searchWordBtn.Image")));
             this.searchWordBtn.ImageActive = null;
-            this.searchWordBtn.Location = new System.Drawing.Point(908, 117);
+            this.searchWordBtn.Location = new System.Drawing.Point(906, 123);
             this.searchWordBtn.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.searchWordBtn.Name = "searchWordBtn";
             this.searchWordBtn.Size = new System.Drawing.Size(34, 20);
@@ -139,7 +139,7 @@
             this.searchDictionaryTextBox.Location = new System.Drawing.Point(591, 110);
             this.searchDictionaryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchDictionaryTextBox.Name = "searchDictionaryTextBox";
-            this.searchDictionaryTextBox.Size = new System.Drawing.Size(356, 34);
+            this.searchDictionaryTextBox.Size = new System.Drawing.Size(356, 43);
             this.searchDictionaryTextBox.TabIndex = 9;
             this.searchDictionaryTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.searchDictionaryTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.searchDictionaryTextBox_KeyDown);
@@ -166,6 +166,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(281, 690);
             this.panel1.TabIndex = 11;
+            // 
+            // usageBtn
+            // 
+            this.usageBtn.ActiveBorderThickness = 1;
+            this.usageBtn.ActiveCornerRadius = 20;
+            this.usageBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(131)))), ((int)(((byte)(105)))));
+            this.usageBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.usageBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(131)))), ((int)(((byte)(105)))));
+            this.usageBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
+            this.usageBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("usageBtn.BackgroundImage")));
+            this.usageBtn.ButtonText = "Usage Examples";
+            this.usageBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.usageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usageBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
+            this.usageBtn.IdleBorderThickness = 1;
+            this.usageBtn.IdleCornerRadius = 20;
+            this.usageBtn.IdleFillColor = System.Drawing.Color.White;
+            this.usageBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
+            this.usageBtn.IdleLineColor = System.Drawing.Color.White;
+            this.usageBtn.Location = new System.Drawing.Point(16, 209);
+            this.usageBtn.Margin = new System.Windows.Forms.Padding(5);
+            this.usageBtn.Name = "usageBtn";
+            this.usageBtn.Size = new System.Drawing.Size(248, 62);
+            this.usageBtn.TabIndex = 16;
+            this.usageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.usageBtn.Click += new System.EventHandler(this.usageBtn_Click);
             // 
             // definitionBtn
             // 
@@ -262,7 +288,7 @@
             this.panelHeader.Location = new System.Drawing.Point(43, 11);
             this.panelHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(203, 50);
+            this.panelHeader.Size = new System.Drawing.Size(255, 62);
             this.panelHeader.TabIndex = 12;
             this.panelHeader.Text = "Dictionary";
             // 
@@ -275,38 +301,13 @@
             this.panelHeader2.Location = new System.Drawing.Point(102, 61);
             this.panelHeader2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.panelHeader2.Name = "panelHeader2";
-            this.panelHeader2.Size = new System.Drawing.Size(83, 50);
+            this.panelHeader2.Size = new System.Drawing.Size(104, 62);
             this.panelHeader2.TabIndex = 13;
             this.panelHeader2.Text = "API";
             // 
-            // usageBtn
-            // 
-            this.usageBtn.ActiveBorderThickness = 1;
-            this.usageBtn.ActiveCornerRadius = 20;
-            this.usageBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(131)))), ((int)(((byte)(105)))));
-            this.usageBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.usageBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(131)))), ((int)(((byte)(105)))));
-            this.usageBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
-            this.usageBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("usageBtn.BackgroundImage")));
-            this.usageBtn.ButtonText = "Usage Examples";
-            this.usageBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.usageBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usageBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
-            this.usageBtn.IdleBorderThickness = 1;
-            this.usageBtn.IdleCornerRadius = 20;
-            this.usageBtn.IdleFillColor = System.Drawing.Color.White;
-            this.usageBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(24)))), ((int)(((byte)(66)))));
-            this.usageBtn.IdleLineColor = System.Drawing.Color.White;
-            this.usageBtn.Location = new System.Drawing.Point(16, 209);
-            this.usageBtn.Margin = new System.Windows.Forms.Padding(5);
-            this.usageBtn.Name = "usageBtn";
-            this.usageBtn.Size = new System.Drawing.Size(248, 62);
-            this.usageBtn.TabIndex = 16;
-            this.usageBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(131)))), ((int)(((byte)(105)))));
             this.ClientSize = new System.Drawing.Size(1226, 720);
@@ -316,7 +317,7 @@
             this.Controls.Add(this.searchWordBtn);
             this.Controls.Add(this.searchDictionaryTextBox);
             this.Controls.Add(this.actionbarPanel);
-            this.Font = new System.Drawing.Font("Roboto Lt", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
